@@ -21,3 +21,13 @@ C:\fakepath(66,8-28): warning X3571: pow(f, e) will not work for negative f, use
 
 [0608/092646.285:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0608/092646.353:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0611/160801.782:INFO:CONSOLE(1)] "Long rAF frame-time", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-rich-tooltips/build/external.js (1)
+[0611/160801.894:ERROR:backend_impl.cc(1062)] Critical error found -8
+[0611/160801.894:WARNING:storage_block-inl.h(131)] Failed data load.
+[0611/160801.894:ERROR:entry_impl.cc(985)] Failed to save user data
+[0611/160801.943:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 1612
+[0611/160801.943:ERROR:mf_helpers.cc(14)] Error in dxva_video_decode_accelerator_win.cc on line 842
+[0611/160801.975:WARNING:angle_platform_impl.cc(52)] compileToBinary(230): 
+C:\fakepath(69,8-58): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(77,8-28): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
