@@ -132,11 +132,11 @@ p {
 }
  
 img {
- 
+ width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -174,9 +174,18 @@ header .content-wrapper {
 }
 
 .header-divider {
+  background: #3a3a3a; 
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav {
@@ -245,8 +254,6 @@ footer .copyright {
 margin: 20px 0;
 }
 
-/* =================== Mobil Styles ======================*/
-
 /* ======================================================== 
     Homepage 
    =======================================================*/
@@ -255,12 +262,14 @@ margin: 20px 0;
 .hero-area {
   background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #527158;
   background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
-h1 {
-  font-family: 'Poppins', sans-serif;
+
+.hero-area h1 {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 2.25em;
   font-weight: 500;
   line-height: 1.2;
@@ -269,7 +278,7 @@ h1 {
 
 /** Aside Area **/
 aside {
-  background: #527158;
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,6 +531,16 @@ margin-bottom: 50px;
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
+
   /**** Header ****/
 
   header {
@@ -532,6 +551,10 @@ margin-bottom: 50px;
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -556,10 +579,20 @@ margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
   }
 
   footer .copyright {
@@ -570,6 +603,15 @@ margin-bottom: 50px;
       Homepage           
      =====================================================*/
   /** Hero Area **/
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+}
 
   /** Aside **/
   aside .content-wrapper {
@@ -586,6 +628,10 @@ margin-bottom: 50px;
   }
 
   /** Features **/
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -604,8 +650,18 @@ margin-bottom: 50px;
     justify-content: space-between;
   }
 
+   .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure,
   .reviews article div {
     width: 49%;        
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* =====================================================
@@ -633,19 +689,29 @@ margin-bottom: 50px;
       align-items: flex-start;
   }
 
-    /* ===================================================
-        FAQ Page 
-       ===================================================*/
-    .faq .content-wrapper {
-      justify-content: space-between;
+  .contact-content h4 {
+    font-size: 1.5em;
   }
 
-    .faq-content {
-        flex-basis: 45%;
-    }
-    .faq h2 {
-      width: 100%;
-    }
+  /* ===================================================
+        FAQ Page 
+       ===================================================*/
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+      flex-basis: 45%;
+  }
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -658,6 +724,20 @@ margin-bottom: 50px;
       max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
   /******* Header *******/
   header {
     padding: 15px 0;
@@ -668,7 +748,8 @@ margin-bottom: 50px;
      =====================================================*/
   /*** Hero ***/
   .hero-area h1 {
-    width: 60%;
+    font-size: 3.75em;
+    width: 80%;
   }
 
   /*** Aside ***/
@@ -679,6 +760,10 @@ margin-bottom: 50px;
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   /* Features */
@@ -695,6 +780,14 @@ margin-bottom: 50px;
     width: 42%;
   }
 
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
   /*======================================================
      About Page 
     ======================================================*/
@@ -703,12 +796,22 @@ margin-bottom: 50px;
     width: 95%;
   }
 
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
   /* =====================================================
       FAQ Page 
      =====================================================*/
 
   .faq h2 {
     width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
   }
 }
 
