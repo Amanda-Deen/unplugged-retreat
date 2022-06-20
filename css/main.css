@@ -245,7 +245,7 @@ footer .copyright {
 margin: 20px 0;
 }
 
-/***** Mobil Styles *****/
+/* =================== Mobil Styles ======================*/
 
 /* ======================================================== 
     Homepage 
@@ -253,7 +253,8 @@ margin: 20px 0;
 
 /** Hero Area **/
 .hero-area {
-  background: url(../img/jake-melara-30679-unsplash.jpg) #527158;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #527158;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -307,7 +308,8 @@ input[type=button] {
 
 /** Features Area **/
 .feature {
-  background: url(../img/rawpixel-800820-unsplash1.jpg) #527158;
+  background: url('../img/rawpixel-800820-unsplash1.jpg')center no-repeat #527158;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -340,7 +342,7 @@ input[type=button] {
 
 /***Reviews Area ***/
 .reviews {
-  background: #2a423a;
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
