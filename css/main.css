@@ -333,20 +333,25 @@ input[type=button] {
   margin: 30px 0;
 }
 
-.feature p {
-  text-align: center;
-  margin: 0;
+.fetures-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .fontawsome-icon {
 
 }
 
-.fetures-item-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+.feature p {
+  text-align: center;
+  margin: 0;
 }
 
 /***Reviews Area ***/
@@ -759,7 +764,7 @@ margin-bottom: 50px;
       font-size: 1.125em;
       line-height: 1.333;
   }
-
+S
   /******* Header *******/
   header {
     padding: 15px 0;
