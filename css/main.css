@@ -105,6 +105,8 @@ body {
 ul, 
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
  
 a {
@@ -116,6 +118,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
  
 h3, 
@@ -222,20 +225,12 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
-.footer-content {
-  margin-bottom: 50px;
-}
-
 footer p {
   margin: 0;
 }
 
 footer .contact {
   margin-bottom: 50px;
-}
-
-footer .social {
-
 }
 
 footer .social-icons{ 
@@ -268,7 +263,7 @@ margin: 20px 0;
 
 /** Hero Area **/
 .hero-area {
-  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #527158;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #527158;
   background-size: cover;
   min-height: 500px;
   display: flex;
@@ -291,10 +286,6 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-aside .form-description {
-  
 }
 
 aside .form {
@@ -324,32 +315,29 @@ input[type=button] {
 }
 
 /** Features Area **/
-.feature {
-  background: url('../img/rawpixel-800820-unsplash1.jpg')center no-repeat #527158;
+.features {
+  background: url("../img/unplugged-retreat-features.jpg");
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.feature h2{
+.features h2 {
   margin-bottom: 60px;
 }
 
-.feature article {
+.features article {
   width: 63%;
   margin: 30px 0;
 }
 
-.fetures-items {
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.fontawsome-icon {
-
 }
 
 .features i {
@@ -357,14 +345,14 @@ input[type=button] {
   margin-bottom: 40px;
 }
 
-.feature p {
+.features p {
   text-align: center;
   margin: 0;
 }
 
-/***Reviews Area ***/
+/*** Reviews Area ***/
 .reviews {
-  background-color: #2a423a;
+  background: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -406,14 +394,6 @@ input[type=button] {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.mission-content {
-
-}
-
-.map {
-
 }
 
 .contact-section {
@@ -604,7 +584,7 @@ margin-bottom: 50px;
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -649,8 +629,6 @@ margin-bottom: 50px;
 
   /** Aside **/
   aside .content-wrapper {
-
-
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
@@ -678,6 +656,10 @@ margin-bottom: 50px;
 
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /** Reviews **/
@@ -783,6 +765,11 @@ S
     padding: 15px 0;
   }
 
+  /******* Footer *******/  
+  footer h4 {
+    font-size: 1.875em;
+  }
+
   /* =====================================================
       Homepage 
      =====================================================*/
@@ -816,18 +803,13 @@ S
   }
 
   /* Reviews */ 
-  .reviews article div {
-    width: 42%;
-  }
-
-  .reviews h2 {
+   .reviews h2 {
     padding-bottom: 50px;
   }
-
-    /******* Footer *******/
-  footer h4 {
-    font-size: 1.875em;
-  }
+  
+  .reviews article div {
+    width: 42%;
+  } 
 
   /*======================================================
      About Page 
@@ -838,6 +820,7 @@ S
   
     .mission h2,
   .contact-section .content-wrapper h2 {
+    font-size: 3em;
     width: 95%;
   }
 
@@ -850,6 +833,7 @@ S
      =====================================================*/
 
   .faq h2 {
+    font-size: 3em;
     width: 100%;
   }
 
